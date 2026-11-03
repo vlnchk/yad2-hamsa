@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/cover.png" alt="Y2 Hamsa: owners only, no brokers" width="100%">
+  <img src="docs/cover.png" alt="Y2 Hamsa: owners only, no brokers. Chrome extension for Yad2 real estate" width="100%">
 </p>
 
 # Hide brokers on Yad2 real estate
