@@ -1,0 +1,4 @@
+{
+  "extName": { "message": "Hide brokers on Yad2 real estate" },
+  "extDesc": { "message": "Hides broker and new-project ads on Yad2, in the list and on the map. Map: full screen, protected-space and listing-age filters." }
+}

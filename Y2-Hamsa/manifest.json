@@ -1,0 +1,60 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extName__",
+  "version": "1.1",
+  "minimum_chrome_version": "111",
+  "description": "__MSG_extDesc__",
+  "default_locale": "en",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.yad2.co.il/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "__MSG_extName__",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.yad2.co.il/*"
+      ],
+      "css": [
+        "hide.css"
+      ],
+      "js": [
+        "i18n.js",
+        "shelter-setting.js",
+        "age-setting.js",
+        "content.js",
+        "map-fullscreen.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": false
+    },
+    {
+      "matches": [
+        "*://*.yad2.co.il/*"
+      ],
+      "js": [
+        "map-filter.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN",
+      "all_frames": false
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+/*
+ * ההסתרה מותנית במחלקות שנמצאות על אלמנט <html>, מחלקה לכל קטגוריה:
+ *   y2ha-re    - מודעות מתווכים בנדל"ן
+ *   y2ha-yad1  - פרויקטים חדשים מקבלן (יד1)
+ * כך כל מתג בפופאפ עובד מיידית, בלי לרענן ובלי לגעת בכל אלמנט בנפרד.
+ */
+
+/* ===== נדל"ן: מודעות מתווכים ===== */
+
+/* מודעות של משרדי תיווך, כולל הווריאנטים הממומנים */
+html.y2ha-re [data-testid="agency-item"],
+html.y2ha-re [data-testid="platinum-item"],
+html.y2ha-re [data-testid="booster-item"],
+
+/* באנרים ומקטעי קידום של סוכנויות */
+html.y2ha-re [data-testid="king-item"],
+html.y2ha-re [data-testid="king-of-the-har-item"],
+html.y2ha-re [data-testid="trio-list"],
+html.y2ha-re [data-testid="leading-agencies"],
+
+/* מה שסומן ע"י הסקריפט לפי היוריסטיקה (לוגו משרד תיווך) */
+html.y2ha-re .y2ha-hidden-re {
+  display: none !important;
+}
+
+/* ===== נדל"ן: פרויקטים חדשים מקבלן (יד1) ===== */
+
+html.y2ha-yad1 [data-testid^="yad1-"],
+html.y2ha-yad1 [data-testid="gray-project-feed-item"],
+html.y2ha-yad1 .y2ha-hidden-yad1 {
+  display: none !important;
+}
+
+/* ===== Карта на весь экран (map-fullscreen.js) ===== */
+
+html.y2ha-map-full-on { overflow: hidden !important; }
+
+.y2ha-map-full {
+  position: fixed !important;
+  top: var(--y2ha-map-top, 0px) !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  transform: none !important;
+  z-index: 40 !important;
+}
+
+.y2ha-map-fill {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+.y2ha-map-btn {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 10;
+  padding: 7px 12px;
+  border: 0;
+  border-radius: 8px;
+  background: #fff;
+  color: #1b1b1b;
+  font: 600 13px/1.2 "Segoe UI", Arial, sans-serif;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .25);
+  cursor: pointer;
+  direction: inherit;
+}
+.y2ha-map-btn:hover { background: #fff3eb; }
